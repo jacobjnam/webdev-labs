@@ -4,6 +4,7 @@ body * {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
 }
 
 /*
@@ -11,14 +12,54 @@ Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
 
+img {
+    width: 20vw;
+}
+
+p {
+    padding: 10px;
+    max-width: 20vw;
+}
+
+button {
+    margin: 10px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+section {
+    display: inline-block;
+    box-sizing: border-box;
+    border: dotted 1px #CCC;
+    min-width: 20vw;
+    min-height: 40vh;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
+    img {
+        width: 40vw;
+    }
 
+    p {
+        padding: 10px;
+        max-width: 40vw;
+    }
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
+    img {
+        width: 70vw;
+    }
 
-    
+    p {
+        padding: 10px;
+        max-width: 70vw;
+    }
 }
