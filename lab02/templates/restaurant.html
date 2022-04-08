@@ -13,14 +13,10 @@
     <main>
         <p>Search location: {{location}}</p>
         <p>Search term: {{search_term or 'None Specified'}}</p>
-        <p>Data: {{ restaurant }}</p>
-        <h2>Top Restaurant:</h2> 
-        <div class="restaurant_card">
-            <h2>{{ restaurant.get('name') }}</h2>
-            <p>{{ restaurant.get('display_address') }}</p>
-            <img src="{{ restaurant.get('image_url') }}">
-            <p>Price Range: {{ restaurant.get('price') }}</p>
-            <p>Rating: {{ restaurant.get('rating') }}/5 ({{ restaurant.get('review_count') }} reviews)</p>
+        <div class="card_list">
+            {% for res in search %}
+            {% include 'includes/restaurant_card.html' %}
+            {% endfor %}
         </div>
     </main>
 </body>

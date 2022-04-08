@@ -39,11 +39,14 @@ main {
 /* ==================== MY STYLE STUFF ==================== */
 /* THINGS TO REVISIT: */
 /* 1) I would like to make the cards the same size, but the card height depends on the image dimensions (image width is 100% card width, but card height then depends on image height) */
-/* 2) The optional stuff if I have time before its due */
 
 .restaurant_card {
     border: solid 1px black;
     width: 25%;
+    display: inline-block;
+    min-width: 20vw;
+    min-height: 40vh;
+    margin-bottom: 20px;
 }
 
 .restaurant_card h2, .restaurant_card p {
@@ -53,3 +56,8 @@ main {
 img {
     width: 100%;
 }
+
+/* .card_list {
+    display: inline-block;
+    border: solid 1px blue;
+} */

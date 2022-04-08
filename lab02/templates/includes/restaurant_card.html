@@ -1,0 +1,7 @@
+<div class="restaurant_card">
+    <h2>{{ res.get('name') }}</h2>
+    <p>{{ res.get('display_address') }}</p>
+    <img src="{{ res.get('image_url') }}">
+    <p>Price Range: {{ res.get('price') }}</p>
+    <p>Rating: {{ res.get('rating') }}/5 ({{ res.get('review_count') }} reviews)</p>
+</div>

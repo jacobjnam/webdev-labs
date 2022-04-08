@@ -88,7 +88,8 @@ def exercise4():
         user=current_user,
         search_term=search_term,
         location=location,
-        restaurant=restaurants[0]
+        restaurant=restaurants[0],
+        search=restaurants
     )
 
 @app.route('/cards/')
