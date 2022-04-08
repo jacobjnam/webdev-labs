@@ -1,0 +1,55 @@
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 3vh;
+    background: #EEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    width: 250px;
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    margin: 3vh;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    /* Media queries go here */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Media queries go here */
+}
+
+/* ==================== MY STYLE STUFF ==================== */
+/* THINGS TO REVISIT: */
+/* 1) I would like to make the cards the same size, but the card height depends on the image dimensions (image width is 100% card width, but card height then depends on image height) */
+/* 2) The optional stuff if I have time before its due */
+
+.restaurant_card {
+    border: solid 1px black;
+    width: 25%;
+}
+
+.restaurant_card h2, .restaurant_card p {
+    margin: 2%;
+}
+
+img {
+    width: 100%;
+}
